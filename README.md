@@ -16,5 +16,8 @@ So, you need to declare this class map in file "/includes/classmap.php"
 
 ## Components ##
 This project is composed from Slim framework 2.0 (for Restfuly API) and Faker (for generate fake data).
+Slim framework 2.0: https://github.com/slimphp/Slim
+PHP Faker: https://github.com/fzaninotto/Faker
+
 
 
