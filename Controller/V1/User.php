@@ -47,13 +47,14 @@ class User extends BaseController
      */
     private function getUserList()
     {
-        $items = array(
-            array(
-                'id' => 1,
-                'fullname' => 'Vo Duy Tuan',
-                'avatar' => ''
-            )
-        );
+        $items = array();
+        for ($i = 0; $i < 30; $i++) {
+            $items[] = array(
+                'id' => $this->faker->randomNumber,
+                'fullname' => $this->faker->name,
+                'avatar' => $this->faker->imageUrl
+            );
+        }
 
         $jsondata = array(
             'total' => 10,

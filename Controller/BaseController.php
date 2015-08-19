@@ -3,13 +3,16 @@
 namespace Controller;
 
 use \Slim\Slim as Slim;
+use \Faker\Factory as Factory;
 
 abstract class BaseController
 {
     protected $app;
+    protected $faker;
 
     public function __construct(Slim $app)
     {
+        $this->faker = Factory::create();
         $this->app = $app;
     }
 
