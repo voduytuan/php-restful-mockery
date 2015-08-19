@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "~2.0",
+        "fzaninotto/faker": "~1.5"
+    },
+    "config" : {
+        "vendor-dir" : "Vendor"
+    }
+}
